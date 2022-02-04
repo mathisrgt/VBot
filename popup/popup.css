@@ -1,0 +1,207 @@
+/*Fichier CSS de la popup VBot*/
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url('../Staatliches-Regular.ttf') format('truetype');
+}
+
+/*Général*/
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    width: 20em;
+}
+
+body {
+    outline:0;
+	margin:0;
+	border:0;
+    padding:5%;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Staatliches', Arial;
+    font-size: 1em;
+    border: 0.65em solid #09B2BB;
+}
+
+.separateur {
+    width: 100%;
+    height: 0.1em;
+    background-color: #e2e2e2; /* à modifier*/
+    margin: 0.75em 0;
+}
+
+svg {
+    margin-right: 0.5em;
+}
+
+section svg {
+    width: 2em;
+    height: 2em;
+}
+
+header, section a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section a {
+    border-radius: 0.5em;
+    margin: 0.2em 0;
+}
+
+/*Header*/
+header img {
+    width: 50%;
+}
+
+header p {
+    color: #BFBFBF;
+}
+
+/*Section "edit" (n°1)*/
+#edit {
+    display: flex;
+}
+
+#edit a {
+    color: #4F4F4F;
+}
+
+#edit p
+{
+    margin: 0.75em 0;
+}
+
+#edit svg
+{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#settings {
+    border: 0.2em solid #09B2BB;
+    margin-right: 2%;
+}
+
+#settings:hover {
+    transition: 0.2s;
+    background-color: #09B2BB;
+    color: #FFFFFF;
+}
+
+#settings svg {
+    stroke: #09B2BB;
+    fill: #09B2BB;
+}
+
+#tutorial svg {
+    stroke: #6AD24E;
+    fill: #6AD24E;
+}
+
+#settings:hover svg {
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+#tutorial:hover svg {
+    stroke: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+#tutorial {
+    border: 0.2em solid #6AD24E;
+    margin-left: 2%;
+}
+
+#tutorial:hover {
+    transition: 0.2s;
+    background-color: #6AD24E;
+    color: #FFFFFF;
+}
+
+/*Section "actions" (n°2)*/
+#actions {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#actions a {
+    background-color: #09B2BB;
+    color: #FFFFFF;
+    border: 0.1em solid #FFFFFF;
+}
+
+#actions a:hover {
+    transition: 0.2s;
+    background-color: #FFFFFF;
+    color: #09B2BB;
+    border: 0.1em solid #09B2BB;
+    font-weight: bold;
+}
+
+#actions a:hover svg {
+    stroke: #09B2BB;
+    fill: #09B2BB;
+    stroke-width: 0.25em;
+}
+
+#actions a:active {
+    width: 80%;
+}
+
+/* A SUPPRIMER POUR SEND MESSAGE FONCTIONNEL*/
+#send, #send:hover, #send:active
+{
+    border: 0.1em solid #e2e2e2!important; 
+    background-color: #ececec!important;
+    pointer-events: none;
+}
+
+#send svg, #send:hover svg, #send p
+{
+    color: #e2e2e2!important;
+    border: 0!important;
+    stroke: none!important;
+    fill: #e2e2e2!important;
+    font-weight: normal!important;
+}
+
+#send:active
+{
+    width: 100%!important;
+}
+
+/*Section MAKE A DONATION (n°3)*/
+#don p {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes change {
+    from{
+        background-color: #0d0d7a;
+    }
+    50%{
+        background-color: #0057c9;
+    }
+    to{
+        background-color: #0d0d7a;
+    }
+}
+
+#don {
+    margin: 1em 0 0 0;
+    animation: change linear 3s infinite;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="options.css" type="text/css" >
+        <title>VBot - Settings</title>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="../images/vbot_text_logo.svg" alt="logo" id="VBot_text_logo"/>
+        </header>
+
+        <section> <!-- Conteneur des box -->
+            
+            <div class="box"> <!-- Box de configuration des quantités -->
+                
+                <div class="box-title"> <!-- Titre -->
+                    <h2>Quantity</h2>
+                    <img src="../images/Click.svg" alt="Mouse Click"/>
+                </div>
+
+                <ul>
+                    <li> <!-- Ligne des likes -->
+                        <div>
+                            <label>Likes</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_likes" value="1" min="1" max="999"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li> <!-- Ligne des unlikes -->
+                        <div>
+                            <label>Unlikes</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_unlikes" value="1" min="1" max="999"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li> <!-- Ligne des follows -->
+                        <div>
+                            <label>Follows</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_follows" value="1" min="1" max="999"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li> <!-- Ligne des unfollows -->
+                        <div>
+                            <label>Unfollows</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_unfollows" value="1" min="1" max="999"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li> <!-- Ligne des unfollows -->
+                        <div>
+                            <label>Messages</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_messages" value="1" min="1" max="999"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="box-save"> <!-- Conteneur du bouton enregistrer -->
+                    <div class="save-btn"> <!-- Bouton enregistrer -->
+                        <img src="../images/Save.svg" alt="Save"/>
+                        <p>Save</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box"> <!-- Box de configuration du message -->
+                
+                <div class="box-title"> <!-- Titre -->
+                    <h2>Message</h2>
+                    <img src="../images/Message.svg" alt="Writing message"/>
+                </div>
+
+                <p class="caption">Write here the message you want to send to your followers.</p>
+
+                <textarea name="message" id="txt_message" placeholder="Write your message here..."></textarea>
+
+                <div class="box-save"> <!-- Conteneur du bouton enregistrer -->
+                    <div class="save-btn"> <!-- Bouton enregistrer -->
+                        <img src="../images/Save.svg" alt="Save"/>
+                        <p>Save</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box"> <!-- Box de configuration de l'intervale -->
+                
+                <div class="box-title"> <!-- Titre -->
+                    <h2>Delay</h2>
+                    <img src="../images/Time.svg" alt="Time Waiting"/>
+                </div>
+
+                <p class="caption">Vbot will randomly take a time between these two values to simulate a human behavior.</p>
+
+                <ul>
+                    <li> <!-- Ligne du minimum de temps d'attente -->
+
+                        <div>
+                            <label>Min</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_min" value="1" min="1" max="10"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li> <!-- Ligne du maximum de temps d'attente -->
+                        <div>
+                            <label>Max</label>
+                        </div>
+                        
+                        <div class="box-config"> <!-- Conteneur du configurateur -->
+                            <div class="config-btn down-btn"> <!-- Conteneur du bouton -->
+                                <img src="../images/Down.svg" alt="Down"/>
+                            </div>
+
+                            <input type="number" id="nb_max" value="1" min="1" max="10"/>
+                            
+                            <div class="config-btn up-btn">
+                                <img src="../images/Up.svg" alt="Up"/>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="box-save"> <!-- Conteneur du bouton enregistrer -->
+                    <div class="save-btn"> <!-- Bouton enregistrer -->
+                        <img src="../images/Save.svg" alt="Save"/>
+                        <p>Save</p>
+                    </div>
+                </div>
+            </div>
+
+            <div> <!-- Conteneur des boutons secondaires -->
+                <div class="box secondary-box" id="donation-btn">
+                    <img src="../images/Boost.svg" alt="Boost Rocket"/>
+                    <h3>Make a donation</h3>
+                </div>
+                <div class="box secondary-box">
+                    <img src="../images/Feedback.svg" alt="Feedback"/>
+                    <h3>Send a feedback</h3>
+                </div>
+                <div class="box secondary-box" id="report-btn">
+                    <img src="../images/Bug.svg" alt="Alert Message"/>
+                    <h3>Report a bug</h3>
+                </div>
+            </div>
+        </section>
+
+        <script src="options.js"></script>
+
+    </body>
+</html>
